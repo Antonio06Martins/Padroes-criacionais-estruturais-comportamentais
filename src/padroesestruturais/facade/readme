@@ -1,0 +1,12 @@
+- Facade
+
+* O Facade é um padrão de projeto estrutural que fornece uma interface simplificada para uma biblioteca, um framework,
+  ou qualquer conjunto complexo de classes.
+* Utilize o padrão Facade quando você precisa ter uma interface limitada mas simples para um subsistema complexo.
+* Crie fachadas para definir pontos de entrada para cada nível de um subsistema. Você pode reduzir o acoplamento
+  entre múltiplos subsistemas fazendo com que eles se comuniquem apenas através de fachadas.
+
+- Passo a Passo
+
+1° -
+

@@ -1,0 +1,16 @@
+- Singleton
+
+* Permite a voce garantir que uma classe tem apenas uma istancia enquanto prove um ponto de acesso global
+  para esta instancia.
+* Esse padrão envolve uma única classe que é responsável por criar um objeto enquanto garante que apenas um único
+  objeto seja criado. Essa classe fornece uma maneira de acessar seu único objeto que pode ser acessado diretamente
+  sem a necessidade de instanciar o objeto da classe.
+* A razão mais comum para isso é para controlar o acesso a algum recurso compartilhado—por exemplo, uma base de
+  dados ou um arquivo.
+
+- Passo a Passo
+
+1° - Vamos criar uma classe SingleObject . A classe SingleObject tem seu construtor como privado e tem uma instância
+     estática de si mesma.
+2° - A classe SingleObject fornece um método estático para obter sua instância estática para o mundo exterior.
+     SingletonPatternDemo, nossa classe de demonstração usará a classe SingleObject para obter um objeto SingleObject.

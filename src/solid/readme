@@ -1,0 +1,29 @@
+- S.O.L.I.D
+* SOLID é um acrônimo dos cinco primeiros princípios da programação orientada a objetos e design de código
+  identificados por Robert C. Martin (ou Uncle Bob).
+
+S - Single Responsibility Principle(SRP), Principio da Resposabilidade Unica
+    - "Nunca deve haver mais de um motivo para uma classe mudar"
+* Dividir as reponsabilidade e não manter tudo em uma unica classe.
+* deve ter um objetivo e uma responsabilidade.
+
+O - Open/Close Principle(OCP), Principio Aberto/Fechado
+    - "Aberto para extensão e fechado para modificação"
+* Pode ser uma classe, modulo ou função.
+
+L - Liskov Substitution Principle(LSP), Principio da Substituição de Liskov
+    - "Uma classe derivada pode ser substituivel por sua classe base"
+* Quando estamos instanciando uma classe herdada e a trocamos pela classe base não pode quebrar a nossa aplicação
+
+I - Interface Segregation Principle(ISP), Principio da Segregação de Interfaces
+    - "Classe não devem ser forçadas a depender de metodos que não usam"
+* Interfaces mais enxutas que não tenha, diversas assinaturas de metodos dentro dela imposibilitando em algum
+  caso sua implementão por uma classe que não vai utilizar todos os metodos contidos na interface em questão.
+
+D - Dependency Inversion Principle(DIP), Principio da Inversão de Dependencia.
+    - "Modulos de alto nivel não devem depender de modulos de baixo nivel. Ambos devem depender de abstrações;
+       Abstrações não devem depender de detalhes"
+* Alto nivel seria nossas regras de negocio, onde cosome as informações ou delegando as tarefas que precisam
+  ser executadas.
+* Alto nivel o que é preciso fazer, Baixo nivel como é feito.
+* Dependa de uma abstração e não de uma implementação.

@@ -1,0 +1,14 @@
+- Adapter
+* O padrão de adaptador funciona como uma ponte entre duas interfaces incompatíveis.
+* Permite a colaboração de objetos de interface incompativeis
+* O Adapter é um padrão de projeto estrutural que permite objetos com interfaces incompatíveis colaborarem entre si.
+* O padrão Adapter permite que você crie uma classe de meio termo que serve como um tradutor entre seu código e a
+  classe antiga, uma classe de terceiros, ou qualquer outra classe com uma interface estranha.
+* Utilize o padrão quando você quer reutilizar diversas subclasses existentes que não possuam alguma funcionalidade
+  comum que não pode ser adicionada a superclasse.
+
+- Passo a Passo
+
+1° -
+
+

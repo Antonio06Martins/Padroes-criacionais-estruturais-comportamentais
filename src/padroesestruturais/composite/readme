@@ -1,0 +1,22 @@
+- Composite
+* O Composite é um padrão de projeto estrutural que permite que você componha objetos em estruturas de árvores e
+  então trabalhe com essas estruturas como se elas fossem objetos individuais.
+* Utilize o padrão Composite quando você tem que implementar uma estrutura de objetos tipo árvore.
+* Utilize o padrão quando você quer que o código cliente trate tanto os objetos simples como os compostos de forma
+  uniforme.
+
+- Passo a Passo
+
+1° - Como um objeto componente, definiremos uma  interface de departamento simples.
+2° - Para os componentes folha, vamos definir classes para os departamentos financeiro e de Promoção
+3° - A segunda classe folha, SalesDepartment, é semelhante. Ambas as classes implementam o  método printDepartmentName()
+     do componente base, onde imprimem os nomes das classes para cada uma delas.
+4° - Como uma classe composta, vamos criar uma classe DepartamentoCentral.
+5° - Esta é uma classe composta, pois contém uma coleção de componentes Department , bem como métodos para adicionar e
+     remover elementos da lista.
+     O método composto retornaDepartamento() é implementado iterando sobre a lista de elementos folha e invocando o
+     método apropriado para cada um.
+6° - Primeiro, criamos duas instâncias para os departamentos financeiro e de vendas. Após, instanciamos o departamento
+     principal e somamos a ele as instâncias criadas anteriormente.
+     Finalmente, podemos testar o método de composição retornaDepartamento() . Como esperamos, a saída contém os nomes
+     de classe de cada componente folha.

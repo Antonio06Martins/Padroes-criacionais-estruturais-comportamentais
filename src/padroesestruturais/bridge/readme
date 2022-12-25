@@ -1,0 +1,11 @@
+- Bridge
+* Permite que voce divida uma classe grande ou um conjunto de classes intimamente ligadas em duas hierarquias separadas
+  Abstração e implementação que podem ser desenvolvidas independentemente umas das outras.
+* Você pode criar classes e aplicações independentes de plataforma.
+* Princípio aberto/fechado.
+* Princípio de responsabilidade única.
+* Utilize o padrão quando você precisa estender uma classe em diversas dimensões ortogonais (independentes)
+* Utilize o padrão Bridge quando você quer dividir e organizar uma classe monolítica que tem diversas variantes da
+  mesma funcionalidade (por exemplo, se a classe pode trabalhar com diversos servidores de base de dados).
+*
+

@@ -1,0 +1,18 @@
+- Factory Method
+
+* Fornece uma Interface para criar obejetos em uma superclasse, mas permite que as subclasses alterem o tipo de objetos
+  que serão criados
+* Evitamos acoplamentos firmes entre o criador e os produtos concretos.
+* Temos aqui o Principio de Responsabilidade Unica (SRP).
+* Temos aqui o Principio de Aberto/Fechado (OCP).
+
+- Passo a Passo
+
+1° - Criamos uma Interface(poderia ser uma classe abstrata) Pagamento com os metodos comuns as classes que iram
+     implementar está Interface.
+2° - Criamos as classes concretas(EX: Debito, Credito, Pix) que vão implementar a interface Pagamento.
+3° - Criamos uma classe com o nome PagamentoFactory onde teremos um metodo Static do tipo Pagamento com nome do metodo
+     getPagamento passando como argumento no paramentro do metodo qual a forma de pagamento escolhida.
+4° - Criamos um Enum FormasPagamentos que contém as opções possiveis para Pagamento (CREDITO, DEBITO, PIX).
+5° - Podemos usar nossa Factory chamando o metodo estatico passando como parametro para o metodo a FormaPagamento
+     PagamentoFactory.getPagamento(FormaPagamento.PIX).

@@ -1,0 +1,22 @@
+- Abstract Factory Method
+
+* Permite que voce produza familias de objetos relacionado sem ter que especificar suas classes concretas.
+* Compatibilidade entre todos os produtos.
+* Evita vinculo forte entre produtos concretos e o codigo cliente.
+* Temos aqui o Principio de Responsabilidade Unica (SRP).
+* Temos aqui também o Principio Aberto/Fechado (OCP).
+
+- Passo a Passo
+
+1° - Criamos um Inteface Pagamento onde teremos as assinaturas dos metodos comuns a todas as classes que irão
+     implementar está interface.
+2° - Criamos a classes concretas (CartaoCredito, CartaoDebito, Pix e Dinheiro).
+3° - Criamos um Enum para passar as Formas de Pagamentos.
+4° - Criamos um classe abstrata PagamentoAbstractFactory onde teremos um metodo abstrato que recebe como paramentro
+     do metodo a Forma de Pagamento sendo o tipo do metodo a nossa interface Pagamento.
+5° - Criamos duas Factorys uma para pagamento com Cartao e ou para pagamento em dinheiro ou pix. Ambas as Factorys
+     são extendidas de PagamentoAbstractFactory onde temos um metodo que vai nos retornar uma ou outra instacia das
+     nossas classes concretas.
+6° - Para setar uma outra Factory criamos um classe FactoryProducer onde teremos um metodo do tipo
+     PagamentoAbstractFactory que recebe em seu paramentro um TipoPagamento conforme for setado aqui no parametro
+     vamos receber uma ou outra Factory.
